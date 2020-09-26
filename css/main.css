@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #0000;
   height: 100%;
   width: 100%;
 }
@@ -107,6 +107,7 @@ body {
   font-size: 1.25em;
   height: 100%;
   color: #fff;
+  background-color: #000;
 }
 
 header,
@@ -117,10 +118,19 @@ footer {
   
 }
 
+header{
+font-family: 'Lora', serif;
+}
+
+
 main {
   background-color: #ccc;
   height: 250px;
   width: 100%;
+  flex-grow: inherit;
+  font-family: 'Handlee', cursive;
+  background:#F0F7D4;
+  color:#110934;
 }
 
 header,
@@ -129,22 +139,57 @@ main {
     display:flex;
 }
 
+footer{
+    height: 150px;
+    font-family: 'Handlee', cursive;
+    align-items: center;
+    background:#F0F7D4;
+    color:#110934;
+    width:100%;
+}
+
+#explanation{
+    width:100%;
+}
+
 .flex-container {
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
+    width:100%;
 
 }
 
 .flex-items {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
-  display:flex;
+    color: #fff;
+    line-height: 1em;
+    font-size: 1em;
+    height: 350px;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-family:'Architects Daughter', cursive;
+    border: 5px dashed black;
 }
+
+#div-1{
+    background:#B2D732;
+    color:#110934;
+}
+
+#div-2{
+    color:#B2D732;
+    background:#f16059;
+}
+
+#div-3{
+    background:#4424D6;
+    color:#F0F7D4;
+}
+
+
 
 /* ==========================================================================
    Helper classes
